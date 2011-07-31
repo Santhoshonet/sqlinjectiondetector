@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Query:</b>
+  <%= @sql_injection_query.query %>
+</p>
+
+
+<%= link_to 'Edit', edit_sql_injection_query_path(@sql_injection_query) %> |
+<%= link_to 'Back', sql_injection_queries_path %>
