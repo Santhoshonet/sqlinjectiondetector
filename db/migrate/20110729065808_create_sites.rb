@@ -8,6 +8,7 @@ class CreateSites < ActiveRecord::Migration
       t.boolean :is_http_authenticated
       t.integer :response_code
       t.boolean :is_it_root_site_url
+      t.text :cookie
       t.timestamps
     end
   end

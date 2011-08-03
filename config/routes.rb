@@ -51,9 +51,9 @@ SQLInjectionDetector::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
   match "/", :controller => "sql_injection", :action => "check"
-  match ":controller/:action(/:siteid)(/:iterationid)"
+  match ":controller/:action"
+  match ":controller/:action/:siteid"
   resources :sites
-  resources :site_contents
   resources :sql_injection_queries
     
   # See how all your routes lay out with "rake routes"

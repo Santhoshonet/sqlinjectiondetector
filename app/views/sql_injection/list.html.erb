@@ -1,0 +1,6 @@
+<% @sit_content.each do |site_content| %>
+    <div>Url : <%= site_content.site.url %></div>
+    <div>Respond Code: <%= site_content.response_code %></div>
+    <div>Https? <%= site_content.site.is_http_authenticated %></div>
+    <iframe frameborder="0" scrolling="auto" height="600px;" width="800px" src="/SqlInjection/sitecontent/<%= site_content.id %>" > </iframe>
+<% end %>

@@ -12,6 +12,25 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
+        <dependency name="activesupport" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="daemons" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="delayed_job" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="json" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source manual="true" />
@@ -80,6 +99,8 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.4.1, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/nokogiri-1.4.4.1-x86-mingw32)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] json (v1.4.6, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/json-1.4.6-x86-mingw32)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] json_pure (v1.4.6, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/json_pure-1.4.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] daemons (v1.1.0, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/daemons-1.1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] delayed_job (v2.1.4, C:/Users/Santhosh/AppData/Ruby192/lib/ruby/gems/1.9.1/gems/delayed_job-2.1.4)" level="application" />
   </component>
 </module>
 

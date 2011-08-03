@@ -12,6 +12,8 @@ gem 'nokogiri'
 gem 'json'
 
 gem 'json_pure'
+
+gem "delayed_job"
 # Use unicorn as the web server
 # gem 'unicorn'
 

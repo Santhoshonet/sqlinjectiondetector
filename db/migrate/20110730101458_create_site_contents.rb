@@ -4,6 +4,7 @@ class CreateSiteContents < ActiveRecord::Migration
       t.text :data
       t.integer :response_code
       t.integer :site_id
+      t.integer :sql_injection_id
       t.timestamps
     end
   end
