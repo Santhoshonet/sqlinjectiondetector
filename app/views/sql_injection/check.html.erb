@@ -1,0 +1,14 @@
+
+<form action="/sql_injection/inject" >
+    <input type="text" name="siteurl" style="height:50px;width:600px;font-size:2.0em;float:left;" value="<%= @site.url %>" />
+    <input type="submit" value="Validate" style="height:50px;width:100px;margin-left:20px">
+</form>
+
+<div style="float:none;clear:both;">
+
+</div>
+
+<ul style="list-style:none" class="sql_injection_results">
+
+</ul>
+

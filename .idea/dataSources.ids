@@ -1,0 +1,35 @@
+<?xml version="1.0"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails SQLInjectionDetector: production" product="" version="" jdbc-version="" driver-version="" uuid="7c07612a-d2d7-4611-94d8-44f137aec000">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql://127.0.0.1:5555/SQLInjectionDetector_production</jdbc-url>
+    <user-name>postgres</user-name>
+    <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedfeadf9bdf98df99</user-password>
+    <libraries>
+      <library>
+        <url>jar://$USER_HOME$/.RubyMine31/config/jdbc-drivers/postgresql-9.0-801.jdbc4.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails SQLInjectionDetector: development" product="" version="" jdbc-version="" driver-version="" uuid="ec8b06ca-92df-4c1b-8e45-0348a4666751">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql://127.0.0.1:5555/SQLInjectionDetector_development</jdbc-url>
+    <user-name>postgres</user-name>
+    <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedfeadf9bdf98df99</user-password>
+    <libraries>
+      <library>
+        <url>jar://$USER_HOME$/.RubyMine31/config/jdbc-drivers/postgresql-9.0-801.jdbc4.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails SQLInjectionDetector: test" product="" version="" jdbc-version="" driver-version="" uuid="6352d39d-f64a-4571-a4cb-2544033db7fc">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql://127.0.0.1:5555/SQLInjectionDetector_test</jdbc-url>
+    <user-name>postgres</user-name>
+    <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfcedfeadf9bdf98df99</user-password>
+    <libraries>
+      <library>
+        <url>jar://$USER_HOME$/.RubyMine31/config/jdbc-drivers/postgresql-9.0-801.jdbc4.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
