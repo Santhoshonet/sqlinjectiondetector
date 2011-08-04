@@ -14,6 +14,8 @@ gem 'json'
 gem 'json_pure'
 
 gem "delayed_job"
+
+gem "thin"
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -10,7 +10,8 @@ class SqlinjectionLib < Struct.new(:site)
     end
   end
 
-private
+
+  private
 
   ## -------- SQL Injection methods ---------------
 
@@ -53,15 +54,23 @@ private
   def get_root_site_url(url)
     root_url = url
     response = get_response(url)
-    while response.code.to_i >= 300 && response.code.to_i < 303
-      doc = Nokogiri::HTML(response.body)
-      doc.xpath('//a').each do |link|
-        begin
-            root_url = link.attr('href')
-            response = get_response(link.attr('href'))
-        rescue
+    # index to exit if it got too long redirects
+    index = 1
+    begin
+      while response.code.to_i >= 300 && response.code.to_i < 303 && index < 10
+        doc = Nokogiri::HTML(response.body)
+        is_link_found = false
+        doc.xpath('//a').each do |link|
+          root_url = link.attr('href')
+          response = get_response(root_url)
+          is_link_found = true
+        end
+        if is_link_found == false
+          root_url = response['Location'].to_s
+          index = index + 1
         end
       end
+    rescue
     end
     root_url
   end
@@ -109,13 +118,21 @@ private
 
   def get_site_content(url)
     response = get_response(url)
-    while response.code.to_i >= 300 && response.code.to_i < 303
+  # index to exit if it got too long redirects
+    index = 1
+    while response.code.to_i >= 300 && response.code.to_i < 303 && index < 11
       doc = Nokogiri::HTML(response.body)
+      is_link_found = false
       doc.xpath('//a').each do |link|
         begin
            response = get_response(link.attr('href'))
         rescue
         end
+        is_link_found = true
+      end
+      if is_link_found == false
+          index = index +1
+          response = get_response(response['Location'].to_s)
       end
     end
     response
