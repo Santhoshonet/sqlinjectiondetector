@@ -4,6 +4,7 @@ require 'net/http'
 require 'net/https'
 require "uri"
 require "sqlinjection"
+require "unicorn"
 
 class SqlInjectionController < ApplicationController
 
@@ -54,6 +55,7 @@ class SqlInjectionController < ApplicationController
         if @sit_content.nil? || @sit_content.count == 0
           redirect_to :controller => "sql_injection", :action => "check"
         end
+        render :stream => true
       else
         redirect_to :action => "check"
       end

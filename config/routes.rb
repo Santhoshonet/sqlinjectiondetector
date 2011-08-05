@@ -1,5 +1,7 @@
 SQLInjectionDetector::Application.routes.draw do
 
+  get "db/reset"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
