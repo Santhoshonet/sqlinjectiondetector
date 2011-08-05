@@ -23,7 +23,7 @@ class SqlInjectionController < ApplicationController
         get_base_content(@site)
         #end
         Delayed::Job.enqueue(SqlinjectionLib.new(@site))
-        system "rake jobs:work"
+        system "rake jobs:work &"
 =begin
         SqlInjectionQuery.all.each do |sql_injection_query|
           doc = Nokogiri::HTML(open(@site.url))
