@@ -9,9 +9,23 @@ require "unicorn"
 class SqlInjectionController < ApplicationController
                       include Sql_injection_module
   def inject
+    test = nil
     unless params[:siteurl].nil?
       @site = Site.new
       @site.url = params[:siteurl].to_s
+
+      begin
+           uri = URI.parse(params[:siteurl])
+          test = uri.request_uri
+      rescue
+      end
+      if test.nil?
+        @error = "Please enter full url."
+        render :check
+        return
+      end
+
+
       if @site.save
        # getting root url
         unless @site.is_it_root
@@ -45,6 +59,7 @@ class SqlInjectionController < ApplicationController
   end
 
   def check
+    @error = ""
     @site = Site.new
   end
 
