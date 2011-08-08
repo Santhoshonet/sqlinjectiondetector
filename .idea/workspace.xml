@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5757d2bf-a130-4205-a1c5-890a9b282f92" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/11" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/12" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/13" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/14" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/15" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/16" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/17" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/18" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/19" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/20" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/21" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/22" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/23" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/24" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/25" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/db/reset.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/db_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/db_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sql_injection/check.html.erb" afterPath="$PROJECT_DIR$/app/views/sql_injection/check.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sql_injection/list.html.erb" afterPath="$PROJECT_DIR$/app/views/sql_injection/list.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/sqlinjection.rb" afterPath="$PROJECT_DIR$/lib/sqlinjection.rb" />
     </list>
     <ignored path="SQLInjectionDetector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,10 +50,11 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sql_injection_controller.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/injection.rake" />
-        <option value="$PROJECT_DIR$/lib/sqlinjection.rb" />
         <option value="$PROJECT_DIR$/app/controllers/db_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/sql_injection/check.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sql_injection/list.html.erb" />
+        <option value="$PROJECT_DIR$/lib/sqlinjection.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -124,6 +107,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -153,76 +138,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql_injection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLInjectionDetector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLInjectionDetector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLInjectionDetector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLInjectionDetector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLInjectionDetector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLInjectionDetector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,7 +375,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1440" height="852" extended-state="7" />
+    <frame x="-1" y="24" width="1438" height="751" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,9 +383,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14090583" sideWeight="0.49452055" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14563806" sideWeight="0.59422493" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5199362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50547945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40577507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -509,11 +430,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/unicorn.development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.021367522" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.42307693" />
@@ -522,11 +438,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20110729122334_create_sql_injection_queries.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="27" selection-start="171" selection-end="171" vertical-scroll-proportion="0.12820514" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="5" selection-start="354" selection-end="12570" vertical-scroll-proportion="0.8258346" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
@@ -552,11 +463,6 @@
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p180/gems/nokogiri-1.5.0/lib/nokogiri/html.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sqlinjection.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="0" selection-start="3995" selection-end="3995" vertical-scroll-proportion="0.31740615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/db_controller.rb">
@@ -587,6 +493,25 @@
     <entry file="file://$PROJECT_DIR$/script/rails">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.22522523" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sqlinjection.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="68" selection-start="4708" selection-end="4708" vertical-scroll-proportion="0.023809524">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.38897893">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

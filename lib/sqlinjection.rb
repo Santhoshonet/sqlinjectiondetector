@@ -22,8 +22,7 @@ module Sql_injection_module
       # response = get_http_response(form,sql_injection_query.query,site)
       # save_site_content(response,site,sql_injection_query.id)
       #end
-      response = get_http_response(sql_injection_query.query,site)
-      save_site_content(response,site,sql_injection_query.id)
+      get_http_response(sql_injection_query.query,site,sql_injection_query.id)
     end
   end
 
@@ -100,7 +99,11 @@ module Sql_injection_module
           uri = URI.parse(url_original)
           url = uri.scheme + "://" + uri.host + action #uri.request_uri
         else
-          url = url_original + "/" + action
+          unless action.nil?
+            url = url_original + "/" + action
+          else
+            url = url_original
+          end
         end
       end
       url = url.gsub("//","/")
@@ -114,7 +117,7 @@ module Sql_injection_module
       uri
     end
 
-    def get_http_response(qry,site)
+    def get_http_response(qry,site,sql_injection_query_id)
       response = get_site_content(site.url)
       cookie = response['Set-Cookie']
       if response.code.to_i < 400
@@ -123,20 +126,22 @@ module Sql_injection_module
           action = form.attr('action')
           parameters = set_parameters(form,qry)
           uri = get_post_back_url(site.url,action)
-          response = get_response_with_parameters(uri,parameters,cookie)
-          if response.code.to_i != 200
-            # try with query string and get the result if it the site is http authenticated
-            if response.code.to_i == 401
-              response = get_response_with_windows_auth(uri,site.cookie,qry,qry)
+          unless action.nil?
+            response = get_response_with_parameters(uri,parameters,cookie)
+            if response.code.to_i != 200
+              # try with query string and get the result if it the site is http authenticated
+              if response.code.to_i == 401
+                response = get_response_with_windows_auth(uri,site.cookie,qry,qry)
+              else
+                # here we need to try with query string, adding query string to Uri
+                response = get_response(site.url + "?" + parameters.to_query)
+              end
             else
-              # here we need to try with query string, adding query string to Uri
-              response = get_response(site.url + "?" + parameters.to_query)
+              save_site_content(response,site,sql_injection_query_id)
             end
           end
-          response
         end
       end
-      response
     end
 
     def get_site_content(url)
