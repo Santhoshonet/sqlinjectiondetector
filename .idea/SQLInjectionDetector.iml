@@ -97,6 +97,9 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.6.0, /home/santhosh/.rvm/gems/ruby-1.9.2-p180/gems/i18n-0.6.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.7, /home/santhosh/.rvm/gems/ruby-1.9.2-p180/gems/rack-test-0.5.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.0.3, /home/santhosh/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] thin (v1.2.11, /home/santhosh/.rvm/gems/ruby-1.9.2-p180/gems/thin-1.2.11)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] eventmachine (v0.12.10, /home/santhosh/.rvm/gems/ruby-1.9.2-p180/gems/eventmachine-0.12.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] daemons (v1.1.4, /home/santhosh/.rvm/gems/ruby-1.9.2-p180/gems/daemons-1.1.4)" level="application" />
   </component>
 </module>
 
