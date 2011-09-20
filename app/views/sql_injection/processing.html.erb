@@ -1,0 +1,44 @@
+<div>
+    <h1>Testing your site for vulnerabilities</h1>
+    <div class="progress">
+        <h3>Static SQL Injection Scan</h3>
+        <!-- Progress bar -->
+        <div>
+            <div class="progress-bar blue"></div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Progress bar end -->
+        <p><span id="status_count">0</span> <span class="sub-text">out of</span> <span id="status_total"> <%= @total %> </span> <span class="sub-text">strings tried</span></p>
+    </div>
+    <!--
+    <div class="progress">
+        <h3>Dynamic SQL Injection Scan</h3>
+        <div>
+            <div class="progress-bar blue"></div>
+            <div class="clearfix"></div>
+        </div>
+        <p>32 <span class="sub-text">out of</span> 250 <span class="sub-text">strings tried</span></p>
+    </div>
+    <div class="progress">
+        <h3>Cross Site Scripting Scan</h3>
+        <div>
+            <div class="progress-bar blue"></div>
+            <div class="clearfix"></div>
+        </div>
+        <p>32 <span class="sub-text">out of</span> 250 <span class="sub-text">strings tried</span></p>
+    </div>
+    <div class="progress">
+        <h3>Vulnerability Scan</h3>
+        <div id="bars-container">
+            <div class="progress-bar blue"></div>
+            <div class="clearfix"></div>
+        </div>
+        <p>32 <span class="sub-text">out of</span> 250 <span class="sub-text">strings tried</span></p>
+    </div>
+    -->
+</div>
+<div id="siteID" class="hidden">
+  <%= params[:siteid] %>
+</div>
+<%= javascript_include_tag "libs/jquery-1.6.2.min" %>
+<%= javascript_include_tag "progress" %>

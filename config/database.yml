@@ -1,5 +1,4 @@
 # PostgreSQL. Versions 7.4 and 8.x are supported.
-#
 # Install the pg driver:
 #   gem install pg
 # On Mac OS X with macports:
@@ -15,8 +14,7 @@ development:
   pool: 5
   username: postgres
   password: password@123
-  port: 5555
-
+  port: 5432
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
@@ -42,7 +40,7 @@ test:
   pool: 5
   username: postgres
   password: password@123
-  port: 5555
+  port: 5432
 
 production:
   adapter: postgresql

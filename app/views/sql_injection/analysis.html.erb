@@ -1,0 +1,40 @@
+<% if @result.count == 0 %>
+    <div class="results-success">
+        <%= image_tag "AllGood.png" %>
+        <h1><%= @total %> tests were run and no vulnerabilities were found</h1>
+    </div>
+    <div class="results">
+        <h1 class="headingWithOptions">Scan Results</h1>
+        <a href='#' class='button downloadButton' onclick="return false;"><%= image_tag "Download.png" %>Download Results</a>
+        <div class="clearfix"></div>
+        <div class="stats">
+            <div class="vertical-list key-stats">
+                <h3>Number of tests run</h3>
+                <h1><%= @total %></h1>
+            </div>
+            <div class="vertical-list sub-stats">
+            </div>
+        </div>
+    </div>
+<% else %>
+    <div class="results-success">
+        <%= image_tag "AllGood.png" %>
+        <h1><%= @total %> tests were run and few vulnerabilities were found</h1>
+    </div>
+    <div class="results">
+        <h1 class="headingWithOptions">Scan Results</h1>
+        <a href='#' class='button downloadButton' onclick="return false;"><%= image_tag "Download.png" %>Download Results</a>
+        <div class="clearfix"></div>
+        <div class="stats">
+            <div class="vertical-list key-stats">
+                <h3>Number of tests run</h3>
+                <h1><%= @total %></h1>
+            </div>
+            <div class="vertical-list sub-stats">
+                <h3>your site has responded the following result when injection is applied.</h3>
+                <%= debug(@result) %>
+            </div>
+        </div>
+    </div>
+<% end %>
+

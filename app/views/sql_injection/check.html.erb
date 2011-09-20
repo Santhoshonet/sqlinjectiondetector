@@ -1,14 +1,15 @@
-
+<h3><%= @error%></h3>
 <form action="/sql_injection/inject" >
-    <input type="text" name="siteurl" style="height:50px;width:600px;font-size:2.0em;float:left;" value="<%= @site.url %>" />
-    <input type="submit" value="Validate" style="height:50px;width:100px;margin-left:20px">
+    <div class="siteURL">
+        <input type="text" class="search search-input" name="SiteURL" value="<%= @site.url %>"/>
+        <a href='#' class='button'>Submit</a>
+    </div>
 </form>
-
 <div style="float:none;clear:both;">
-
 </div>
-
 <ul style="list-style:none" class="sql_injection_results">
-
 </ul>
+<%= javascript_include_tag "libs/jquery-1.6.2.min" %>
+<%= javascript_include_tag "JQValidation" %>
+<%= javascript_include_tag "Validation" %>
 
