@@ -9,7 +9,7 @@ gem 'nokogiri'
 gem 'json_pure'
 #gem "delayed_job"
 gem "thin"
-gem "rake"
+gem "rake", '0.8.7'
 gem "xml-simple"
 # Use unicorn as the web server
 gem 'unicorn'
