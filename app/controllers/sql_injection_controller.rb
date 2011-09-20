@@ -21,7 +21,8 @@ class SqlInjectionController < ApplicationController
       end
       if test.nil?
         @error = "Please enter full url."
-        render :check
+        redirect_to :action => "check"
+        #render :check
         return
       end
       if @site.save
@@ -34,7 +35,8 @@ class SqlInjectionController < ApplicationController
           end
         rescue
           @error = "Something wrong happened at the server, please check the url and submit again."
-          render :check
+          #render :check
+          redirect_to :action => "check"
           return
         end
         #if site.status == false
@@ -55,7 +57,8 @@ class SqlInjectionController < ApplicationController
         redirect_to "/sql_injection/processing/" + @site.id.to_s
         return
       else
-          render :check
+          #render :check
+          redirect_to :action => "check"
           return
       end
     else
