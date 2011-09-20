@@ -63,6 +63,7 @@ class SqlInjectionController < ApplicationController
       end
     else
         redirect_to :action => "check"
+        return
     end
   end
 
