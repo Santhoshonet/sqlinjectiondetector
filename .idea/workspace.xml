@@ -72,7 +72,7 @@
       <file leaf-file-name="sql_injection_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/sql_injection_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="21" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.6362339">
+            <state line="84" column="10" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-0.94721824">
               <folding />
             </state>
           </provider>
@@ -639,7 +639,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sql_injection_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="21" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.6362339">
+        <state line="84" column="10" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-0.94721824">
           <folding />
         </state>
       </provider>

@@ -72,6 +72,7 @@ class SqlInjectionController < ApplicationController
         @total = SqlInjectionQuery.count()
     else
         redirect_to :action => "check"
+      return
     end
   end
 
@@ -81,6 +82,7 @@ class SqlInjectionController < ApplicationController
       count   = SiteContent.find_all_by_site_id(params[:siteid]).count() - 1
     end
     render :text => count
+    return
   end
 
   def analysis
