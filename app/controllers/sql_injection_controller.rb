@@ -72,12 +72,11 @@ class SqlInjectionController < ApplicationController
   end
 
   def status
+    count = 0
     unless params[:siteid].nil?
-      render :text => SiteContent.find_all_by_site_id(params[:siteid]).count() - 1
-      return
-    else
-      render :text =>  ""
+      count   = SiteContent.find_all_by_site_id(params[:siteid]).count() - 1
     end
+    render :text => count
   end
 
   def analysis
