@@ -1,5 +1,5 @@
-<h3><%= @error%></h3>
 <form action="/sql_injection/inject" >
+    <h3><%= @error%></h3>
     <div class="siteURL">
         <input type="text" class="search search-input" name="SiteURL" value="<%= @site.url %>"/>
         <a href='#' class='button'>Submit</a>
