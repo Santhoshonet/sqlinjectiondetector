@@ -21,9 +21,8 @@ class SqlInjectionController < ApplicationController
       end
       if test.nil?
         @error = "Please enter full url."
-        redirect_to :action => "check"
-        #render :check
-        return
+        render :check and return
+
       end
       if @site.save
         begin
@@ -35,9 +34,8 @@ class SqlInjectionController < ApplicationController
           end
         rescue
           @error = "Something wrong happened at the server, please check the url and submit again."
-          #render :check
-          redirect_to :action => "check"
-          return
+          render :check and return
+
         end
         #if site.status == false
         get_base_content(@site)
@@ -54,16 +52,15 @@ class SqlInjectionController < ApplicationController
         end
 =end
         #redirect_to "/sql_injection/list/" + @site.id.to_s
-        redirect_to "/sql_injection/processing/" + @site.id.to_s
-        return
+        redirect_to "/sql_injection/processing/" + @site.id.to_s and return
+
       else
           #render :check
-          redirect_to :action => "check"
-          return
+          redirect_to :action => "check" and return
+
       end
     else
-        redirect_to :action => "check"
-        return
+        redirect_to :action => "check"   and return
     end
   end
 
@@ -71,8 +68,7 @@ class SqlInjectionController < ApplicationController
     unless params[:siteid].nil?
         @total = SqlInjectionQuery.count()
     else
-        redirect_to :action => "check"
-      return
+        redirect_to :action => "check" and return
     end
   end
 
@@ -81,8 +77,7 @@ class SqlInjectionController < ApplicationController
     unless params[:siteid].nil?
       count   = SiteContent.find_all_by_site_id(params[:siteid]).count() - 1
     end
-    render :text => count
-    return
+    render :text => count   and return
   end
 
   def analysis
@@ -154,10 +149,10 @@ class SqlInjectionController < ApplicationController
           redirect_to :controller => "sql_injection", :action => "check"
         end
       else
-        redirect_to :action => "check"
+        redirect_to :action => "check" and return
       end
     else
-      redirect_to :action => "check"
+      redirect_to :action => "check" and return
     end
   end
 

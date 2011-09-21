@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5757d2bf-a130-4205-a1c5-890a9b282f92" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sql_injection_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sql_injection_controller.rb" />
     </list>
     <ignored path="SQLInjectionDetector.iws" />
@@ -24,43 +26,43 @@
   <component name="DisabledGemRequirementsHolder">
     <module name="SQLInjectionDetector">
       <requirement>
-        <dependency name="i18n" version="0.4" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+        <dependency name="arel" version="2.0.2" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
         <dependency name="rack" version="1.2.1" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
-        <dependency name="arel" version="2.0.2" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
-      </requirement>
-      <requirement>
-        <dependency name="tzinfo" version="0.3.23" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+        <dependency name="i18n" version="0.4" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
         <dependency name="delayed_job" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
+        <dependency name="rack" version="1.0.0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <requirement>
         <dependency name="daemons" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
-      </requirement>
-      <requirement>
-        <dependency name="bundler" version="1.0" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
-      </requirement>
-      <requirement>
-        <dependency name="eventmachine" version="0.12.10" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
         <dependency name="mail" version="2.2.9" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
-        <dependency name="json_pure" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="eventmachine" version="0.12.10" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
-        <dependency name="rack" version="1.0.0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="nokogiri" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <requirement>
+        <dependency name="tzinfo" version="0.3.23" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+      </requirement>
+      <requirement>
+        <dependency name="json_pure" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
         <dependency name="rack" version="1.0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <requirement>
-        <dependency name="nokogiri" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="bundler" version="1.0" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
       </requirement>
     </module>
   </component>
@@ -72,7 +74,7 @@
       <file leaf-file-name="sql_injection_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/sql_injection_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="10" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-0.94721824">
+            <state line="19" column="44" selection-start="498" selection-end="498" vertical-scroll-proportion="0.4059829">
               <folding />
             </state>
           </provider>
@@ -179,9 +181,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Favorites" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -505,7 +507,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1440" height="852" extended-state="0" />
+    <frame x="-1" y="24" width="1442" height="853" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -513,9 +515,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14470842" sideWeight="0.49245542" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15744069" sideWeight="0.492635" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5199362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5075446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.507365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -560,11 +562,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/libs/jquery-1.6.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/JQValidation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -578,11 +575,6 @@
     <entry file="file://$PROJECT_DIR$/public/javascripts/Validation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="31" selection-start="160" selection-end="160" vertical-scroll-proportion="0.093406595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/db_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.023351649" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -632,14 +624,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.23537803">
+        <state line="11" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.23537803" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/db_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.021367522">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sql_injection_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="10" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-0.94721824">
+        <state line="19" column="44" selection-start="498" selection-end="498" vertical-scroll-proportion="0.4059829">
           <folding />
         </state>
       </provider>
