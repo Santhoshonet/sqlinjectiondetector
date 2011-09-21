@@ -5,7 +5,7 @@ $(function() {
     {
         // ajax requesting here to find out the status
         $.ajax({
-            url: "/sql_injection/status/" + $('#siteID').html() ,
+            url: "/sql_injection/sql_injection_status/" + $('#siteID').html() ,
             async: true,
             cache: false,
             type: 'GET',
