@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5757d2bf-a130-4205-a1c5-890a9b282f92" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sql_injection_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sql_injection_controller.rb" />
     </list>
     <ignored path="SQLInjectionDetector.iws" />
@@ -74,7 +72,7 @@
       <file leaf-file-name="sql_injection_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/sql_injection_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="44" selection-start="498" selection-end="498" vertical-scroll-proportion="0.4059829">
+            <state line="54" column="56" selection-start="1672" selection-end="1672" vertical-scroll-proportion="0.5769231">
               <folding />
             </state>
           </provider>
@@ -507,7 +505,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1442" height="853" extended-state="7" />
+    <frame x="-1" y="24" width="1442" height="853" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -643,7 +641,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sql_injection_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="498" selection-end="498" vertical-scroll-proportion="0.4059829">
+        <state line="54" column="56" selection-start="1672" selection-end="1672" vertical-scroll-proportion="0.5769231">
           <folding />
         </state>
       </provider>

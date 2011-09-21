@@ -35,7 +35,6 @@ class SqlInjectionController < ApplicationController
         rescue
           @error = "Something wrong happened at the server, please check the url and submit again."
           render :check and return
-
         end
         #if site.status == false
         get_base_content(@site)
@@ -52,7 +51,7 @@ class SqlInjectionController < ApplicationController
         end
 =end
         #redirect_to "/sql_injection/list/" + @site.id.to_s
-        redirect_to "/sql_injection/processing/" + @site.id.to_s and return
+        redirect_to :action => "processing" , :siteid => @site.id.to_s and return
 
       else
           #render :check
